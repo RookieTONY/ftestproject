@@ -1,0 +1,8 @@
+name = "ftestproject"
+compatibility_date = "2026-09-22"
+
+# 纯静态站点：直接将 Vite 构建产物作为 Worker 静态资源部署
+[assets]
+directory = "./dist"
+# SPA 兜底：未命中资源的路径回退到 index.html（hash 路由下用不到，但切换 history 路由后可避免刷新 404）
+not_found_handling = "single-page-application"

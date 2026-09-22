@@ -1,0 +1,51 @@
+/* 全局基础样式与主题变量 */
+:root {
+  /* 深色主题色（深蓝/藏青） */
+  --color-header-bg: #1f2d3d;
+  --color-header-bg-deep: #18222f;
+  --color-sidebar-bg: #1f2d3d;
+  --color-menu-hover: #263445;
+  --color-menu-active: #409eff;
+  --color-text-main: #e8eef5;
+  --color-text-sub: #a3b1c2;
+
+  /* 布局尺寸 */
+  --header-height: 60px;
+  --custom-bar-height: 40px;
+  --sidebar-width: 230px;
+  --sidebar-collapse-width: 64px;
+
+  /* 背景色 */
+  --color-bg-page: #f0f2f5;
+  --color-bg-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', Arial, sans-serif;
+  font-size: 14px;
+  color: #303133;
+}
+
+/* 滚动条美化（Webkit 内核） */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(144, 147, 153, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
